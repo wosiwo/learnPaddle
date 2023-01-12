@@ -54,7 +54,6 @@ for i in range(1):
 #存储训练结果
 params_dirname = "result"
 fluid.io.save_inference_model(params_dirname, ['x'], [y_predict], exe)
-exit()
 # 开始预测
 infer_exe = fluid.Executor(cpu)
 inference_scope = fluid.Scope()
